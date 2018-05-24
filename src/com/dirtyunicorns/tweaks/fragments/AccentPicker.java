@@ -369,9 +369,9 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
             blackAccent = mView.findViewById(R.id.blackAccent);
             // Change the accent picker button depending on whether or not the dark theme is applied
             blackAccent.setBackgroundColor(getResources().getColor(
-                    isUsingDarkTheme() || isUsingBlackAFTheme()  ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    isUsingDarkTheme() || isUsingBlackAFTheme() || isUsingDirtyyyTheme()  ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
             blackAccent.setBackgroundTintList(getResources().getColorStateList(
-                    isUsingDarkTheme() || isUsingBlackAFTheme()  ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
+                    isUsingDarkTheme() || isUsingBlackAFTheme() || isUsingDirtyyyTheme()  ? R.color.accent_picker_white_accent : R.color.accent_picker_dark_accent));
         }
         if (blackAccent != null) {
             blackAccent.setOnClickListener(new View.OnClickListener() {
@@ -416,6 +416,18 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
         OverlayInfo themeInfo = null;
         try {
             themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.blackaf",
+                    UserHandle.USER_CURRENT);
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return themeInfo != null && themeInfo.isEnabled();
+    }
+
+    // Check for the dirtyyy theme overlay
+    private boolean isUsingDirtyyyTheme() {
+        OverlayInfo themeInfo = null;
+        try {
+            themeInfo = mOverlayManager.getOverlayInfo("com.android.system.theme.dirtyyy",
                     UserHandle.USER_CURRENT);
         } catch (RemoteException e) {
             e.printStackTrace();
