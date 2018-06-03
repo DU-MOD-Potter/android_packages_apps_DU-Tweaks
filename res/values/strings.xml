@@ -199,7 +199,11 @@
     <string name="recents_clear_all_location_top_center">Top center</string>
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
-    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>   
+    
+    <!-- Recents feature, Membar -->
+    <string name="recents_show_membar_title">Memory bar</string>
+    <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 
     <!-- Hide Lockscreen clock, date, & alarm -->
     <string name="lockscreen_items_other">Other</string>
@@ -743,5 +747,9 @@
     <string name="wallpaper_tint_keyguard">Lockscreen background tint</string>
     <string name="wallpaper_tint_notification_shade">Notification shade tint</string>
     <string name="wallpaper_tint_summary">Apply a tint to the background based on the homescreen wallpaper</string>
+
+    <!-- Face unlock -->
+    <string name="face_auto_unlock_title">Face auto unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lockscreen after face unlocking</string>
 
 </resources>
