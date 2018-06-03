@@ -26,14 +26,6 @@
             android:maxHeight="48dp"/>
     </LinearLayout-->
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp">
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
