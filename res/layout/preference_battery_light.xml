@@ -32,23 +32,6 @@
         android:layout_weight="1"
         android:paddingTop="16dp"
         android:paddingBottom="16dp">
-
-        <TextView android:id="@+android:id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-            android:ellipsize="marquee"
-            android:fadingEdge="horizontal" />
-
-        <TextView android:id="@+android:id/summary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@android:id/title"
-            android:layout_alignStart="@android:id/title"
-            android:textAppearance="@android:style/TextAppearance.Material.Body1"
-            android:textColor="?android:attr/textColorSecondary"
-            android:maxLines="1" />
     </RelativeLayout>
 
     <LinearLayout
